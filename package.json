@@ -29,8 +29,8 @@
   },
   "homepage": "https://github.com/memrise/lqip-loader#readme",
   "dependencies": {
-    "loader-utils": "^1.1.0",
-    "lqip": "^2.1.0"
+    "@memrise/lqip": "^2.1.1",
+    "loader-utils": "^1.1.0"
   },
   "peerDependencies": {
     "file-loader": "*"

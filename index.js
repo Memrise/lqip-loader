@@ -1,8 +1,8 @@
 var loaderUtils = require("loader-utils");
-// lqip: https://github.com/zouhir/lqip
-var lqip = require("lqip");
+// lqip: https://github.com/zouhir/lqip / https://github.com/memrise/lqip
+var lqip = require("@memrise/lqip");
 
-module.exports = function(contentBuffer) {
+module.exports = function (contentBuffer) {
   this.cacheable && this.cacheable();
   var callback = this.async();
 
@@ -57,7 +57,7 @@ module.exports = function(contentBuffer) {
 
   // final step, resolving all the promises we got so far
   Promise.all(outputPromises)
-    .then(data => {
+    .then((data) => {
       if (data) {
         var result = 'module.exports = { "src": ' + source;
         // either null or base64
@@ -75,7 +75,7 @@ module.exports = function(contentBuffer) {
         callback(err, null);
       }
     })
-    .catch(error => {
+    .catch((error) => {
       console.error(error);
       callback(err, null);
     });
