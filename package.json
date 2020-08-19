@@ -1,14 +1,15 @@
 {
-  "name": "lqip-loader",
+  "name": "@memrise/lqip-loader",
   "version": "2.2.0",
-  "description": "Low Quality Image Placeholders (LQIP) loader for webpack",
+  "description": "Low Quality Image Placeholders (LQIP) loader for webpack; forked for security workaround",
   "main": "index.js",
   "scripts": {
+    "publish": "npm run publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zouhir/lqip-loader.git"
+    "url": "git+https://github.com/mulholio/lqip-loader.git"
   },
   "keywords": [
     "Webpack",
@@ -21,12 +22,12 @@
     "lazy",
     "load"
   ],
-  "author": "Zouhir Chahoud",
+  "author": "Memrise",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zouhir/lqip-loader/issues"
+    "url": "https://github.com/memrise/lqip-loader/issues"
   },
-  "homepage": "https://github.com/zouhir/lqip-loader#readme",
+  "homepage": "https://github.com/memrise/lqip-loader#readme",
   "dependencies": {
     "loader-utils": "^1.1.0",
     "lqip": "^2.1.0"
