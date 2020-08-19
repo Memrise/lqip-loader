@@ -4,7 +4,7 @@
   "description": "Low Quality Image Placeholders (LQIP) loader for webpack; forked for security workaround",
   "main": "index.js",
   "scripts": {
-    "publish": "npm run publish",
+    "publish": "npm publish --access public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
